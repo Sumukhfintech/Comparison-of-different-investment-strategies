@@ -37,7 +37,7 @@ Python,yfinance, pandas, numpy, matplotlib, seaborn
 
 ## 📊 **Results**
 
-Strategy 1:
+## Strategy 1:
 This strategy suits a passive investor wanting to invest and forget about it for a long period of time. We conclude that even though the investor faced losses while extreme volatility like pandemic or 2008 financial crisis, the overall returns outweighs the associated risks. Overall profit after tax: 1740.86%
 
 ![image](https://github.com/user-attachments/assets/2eb1c5b0-db71-4ee0-b9d8-bcde735f6c97)
@@ -49,7 +49,7 @@ Low transaction cost ; Time saved ; Low taxes
 _Cons:_
 High opportunity cost ; Different strategy could be much more lucrative ; Chance investor can lose entire investment if there are no exits during recessions
 
-Strategy 2:
+## Strategy 2:
 This strategy is not won’t be fruitful for any type of passive investor either risk averse or a risk seeker. A risk averse person wouldn’t invest everyday if he/she knows a financial crisis is going on and at the same time, a risk seeker won’t be interested as well as he/she wouldn’t be getting the returns for the risk involved. There are more negative aspects like the transaction cost of trading as it would be absurdly high along with opportunity cost of missing the overnight market. Overall profit after tax: -1.90%. Only active investors should chose this strategy.
 
 ![image](https://github.com/user-attachments/assets/7756b622-5fc5-4b9c-bb45-7f42a1e18873)
@@ -58,7 +58,7 @@ _Pros:_ No overnight exposure; High liquidity ; Low opportunity cost - ability t
   
 _Cons:_ Emotional stress; Limited time horizon ; High transaction cost ; Market volatility
 
-Strategy 3:
+## Strategy 3:
 We believe that strategy 3 is similar in terms of strategy 2, no type of investor would go for a strategy like this since it is yielding negative profits at the end of 30 years. This strategy will not only decrease the liquidity but also incur a lot of transaction costs. Overall profit after tax: - 0.55%
 
 _Pros:_ Early reaction to news; Opportunity for after hours gain; Potential for lower price volatility
@@ -67,7 +67,8 @@ _Pros:_ Early reaction to news; Opportunity for after hours gain; Potential for 
 
 ![image](https://github.com/user-attachments/assets/f06a0a58-0d65-4720-87f4-7f06029886c6)
 
-Strategy 4: This strategy gave the best pre and post tax return on the market mainly due to removing the worst days like the dot com bubble crash, the 2008 crash, and the pandemic shocks. However, the tax compliance for this strategy would be very complex and the after-tax profits that we calculated(on the basis of short-term capital gains) are likely to be inflated. One of the main negative aspect of this strategy is the super-natural ability a person must posses to know the best and worst days is not possible in real life. Overall profit after tax: 1797.68%. This shows that a lot of the market returns are driven by outliers but these are impossible to predict.
+## Strategy 4: 
+This strategy gave the best pre and post tax return on the market mainly due to removing the worst days like the dot com bubble crash, the 2008 crash, and the pandemic shocks. However, the tax compliance for this strategy would be very complex and the after-tax profits that we calculated(on the basis of short-term capital gains) are likely to be inflated. One of the main negative aspect of this strategy is the super-natural ability a person must posses to know the best and worst days is not possible in real life. Overall profit after tax: 1797.68%. This shows that a lot of the market returns are driven by outliers but these are impossible to predict.
 
 _Pros:_ Exponential growth; Potential lower fee
 
@@ -75,7 +76,7 @@ _Cons:_ Foresight ability (impossible); High opportunity cost
 
 ![image](https://github.com/user-attachments/assets/12f8f1c5-cb82-404c-b05d-618d1a636e63)
 
-**Risk Free Alternative?**
+## **Risk Free Alternative?**
 
 What if there was an alternative to invest in a risk-free asset like a 30-year T-Bond. 
 Assuming the treasury bond in issue at the same time as the first SPY ETF is Zero Coupon, the YTM would 7.2%. The investor also doesn’t really have an opportunity to profit of potential price fluctuations as the YTM is flat compared to the exponential growth witnessed by the SPY ETF. Even if we relax the assumption of no coupons, generally the coupon rate tracks the YTM closely. Therefore, holding only T-bonds would not yield the investor sufficient returns.
