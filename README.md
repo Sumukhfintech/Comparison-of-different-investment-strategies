@@ -1,75 +1,75 @@
-<header>
+🧭 **Project Overview**
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+In this project, I try to test what are the best investment strategies that a new passive investor should chose to allocate his money in. I try to estimate four strategies: Buy and hold; Day trading; Overnight trading; Buy and hold excluding the top 3 and worst 3 trading days in each year. We use the SPY ETF as our market proxy. We assume the investor is from Texas and is deciding on how best to allocate $10,000 starting January 1, 2024. The investor is looking to maximize returns while taking into account tax implications and market timing considerations. I backtest the strategies over historical data (from the first trading day of SPY in 1993) to compare their performance in terms of returns, volatility, and tax-adjusted profitability.
 
-# GitHub Pages
+🎯 **Objective**
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+To identify the best-performing investment strategy among four SPY-based approaches by:
+1. Backtesting each strategy's performance
+2. Accounting for short-term capital gains tax and tax-loss harvesting
+3. Evaluating risk-adjusted returns
 
-</header>
+🧠 **Assumptions**
+1. The investor is based in Texas (no state income tax). 
+2. A zero-commission brokerage is used. I assume no other transaction costs apply.
+3. Taxes are applied only at year-end for short-term capital gains. 
+4. Tax-loss harvesting is performed automatically and efficiently.
+5. The $3,000 limit on tax-loss harvesting does not apply. 
 
-<!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
--->
 
-## Welcome
+💡 **Strategies Evaluated**
+1. Buy and Hold: The investor holds and sells it at the end of the duration.
+2. Day trading: The investor buys and exits after every trading day, and re-enters the next trading day with only the remaining money.
+3. Overnight trading: The investor buys and exits after every overnight trading sessuib, and re-enters the next session with only the remaining money.
+4. Buy and Hold with foresight: The investor buys and holds, and has the foresight in the experiment to know the best and the worst three days each year.
 
-With GitHub Pages, you can host project blogs, documentation, resumes, portfolios, or any other static content you'd like. Your GitHub repository can easily become its own website. In this course, we'll show you how to set up your own site or blog using GitHub Pages.
+🔧 **Tools Used**
+Python,yfinance, pandas, numpy, matplotlib, seaborn
 
-- **Who is this for**: Beginners, students, project maintainers, small businesses.
-- **What you'll learn**: How to build a GitHub Pages site.
-- **What you'll build**: We'll build a simple GitHub Pages site with a blog. We'll use [Jekyll](https://jekyllrb.com), a static site generator.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course takes less than one hour to complete.
+📊 **Results**
 
-In this course, you will:
+Strategy 1:
+This strategy suits a passive investor wanting to invest and forget about it for a long period of time. We conclude that even though the investor faced losses while extreme volatility like pandemic or 2008 financial crisis, the overall returns outweighs the associated risks. Overall profit after tax: 1740.86%
 
-1. Enable GitHub Pages
-2. Configure your site
-3. Customize your home page
-4. Create a blog post
-5. Merge your pull request
+  
+ _Pros:_
+Low transaction cost ; Time saved ; Low taxes
+  
+_Cons:_
+High opportunity cost ; Different strategy could be much more lucrative ; Chance investor can lose entire investment if there are no exits during recessions
 
-### How to start this course
+Strategy 2:
+This strategy is not won’t be fruitful for any type of passive investor either risk averse or a risk seeker. A risk averse person wouldn’t invest everyday if he/she knows a financial crisis is going on and at the same time, a risk seeker won’t be interested as well as he/she wouldn’t be getting the returns for the risk involved. There are more negative aspects like the transaction cost of trading as it would be absurdly high along with opportunity cost of missing the overnight market. Overall profit after tax: -1.90%. Only active investors should chose this strategy.
 
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'github-pages',
-  owner: '@me',
-  name: 'skills-github-pages',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
+_Pros:_ No overnight exposure; High liquidity ; Low opportunity cost - ability to pursue better opportunities if they arrise
+  
+_Cons:_ Emotional stress; Limited time horizon ; High transaction cost ; Market volatility
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=github-pages&owner=%40me&name=skills-github-pages&description=My+clone+repository&visibility=public)
+Strategy 3:
+We believe that strategy 3 is similar in terms of strategy 2, no type of investor would go for a strategy like this since it is yielding negative profits at the end of 30 years. This strategy will not only decrease the liquidity but also incur a lot of transaction costs. Overall profit after tax: - 0.55%
 
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+_Pros:_ Early reaction to news; Opportunity for after hours gain; Potential for lower price volatility
 
-<footer>
+ _Cons:_ Increased risk and volatility; Higher transaction cost; Missing out on lucrative intraday opportunities; Lack of liquidity
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+Strategy 4: This strategy gave the best pre and post tax return on the market mainly due to removing the worst days like the dot com bubble crash, the 2008 crash, and the pandemic shocks. However, the tax compliance for this strategy would be very complex and the after-tax profits that we calculated(on the basis of short-term capital gains) are likely to be inflated. One of the main negative aspect of this strategy is the super-natural ability a person must posses to know the best and worst days is not possible in real life. Overall profit after tax: 1797.68%
 
----
+_Pros:_ Exponential growth; Potential lower fee
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+_Cons:_ Foresight ability (impossible)
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+**Risk Free Alternative?**
 
-</footer>
+What if there was an alternative to invest in a risk-free asset like a 30-year T-Bond. 
+Assuming the treasury bond in issue at the same time as the first SPY ETF is Zero Coupon, the YTM would 7.2%. The investor also doesn’t really have an opportunity to profit of potential price fluctuations as the YTM is flat compared to the exponential growth witnessed by the SPY ETF. Even if we relax the assumption of no coupons, generally the coupon rate tracks the YTM closely. Therefore, holding only T-bonds would not yield the investor sufficient returns.
+
+📌 **Conclusion**
+
+After careful assessment of all the four strategies presented to us, our favor would go in the direction of strategy one or strategy four purely on the basis of the profits. But there are few reasons why to believe that strategy 1 would still be better than strategy 4, such as:
+The assumptions used for calculating tax in strategy four is extremely simple for the complex nature of STCG, relaxing the assumptions like the no yearly harvesting limit itself will reduce the profits.
+Biggest shortcoming of strategy 4 is its foresight ability which is not possible in a real-life scenario.
+
+
+
+
+
